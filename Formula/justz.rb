@@ -1,28 +1,28 @@
 class Justz < Formula
   desc "Help, checks and shims for just"
   homepage "https://github.com/igorlino/justz"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/igorlino/justz/releases/download/v0.2.0/justz-0.2.0-darwin-arm64.tar.gz"
-      sha256 "dc80849a72b8d9d8dba788c4115f2f2b118783259ec06ce85f952ad0a93399af"
+      url "https://github.com/igorlino/justz/releases/download/v0.3.0/justz-0.3.0-darwin-arm64.tar.gz"
+      sha256 "6dd10e90f736a8cc37cba653ba1be63ce55fbc32fd5a8ae14a50f532c9f3f32a"
     end
     on_intel do
-      url "https://github.com/igorlino/justz/releases/download/v0.2.0/justz-0.2.0-darwin-amd64.tar.gz"
-      sha256 "b6e889092abb8f63a57c58192e86aa557d49e0836931911d3f10f8628e8875df"
+      url "https://github.com/igorlino/justz/releases/download/v0.3.0/justz-0.3.0-darwin-amd64.tar.gz"
+      sha256 "54c7a5bca2802720069b943bb58be79facb032ea0de7f29de63ae98239f75cd0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/igorlino/justz/releases/download/v0.2.0/justz-0.2.0-linux-arm64.tar.gz"
-      sha256 "fc161647d8f7c5dcc9b25cccabbf1aa701505818bf30aed451b4c2b3e2cc7dcb"
+      url "https://github.com/igorlino/justz/releases/download/v0.3.0/justz-0.3.0-linux-arm64.tar.gz"
+      sha256 "e0416ded2070229bc7a852466cd547f87c4c72163d773e8e2fb03ce9bfba10f9"
     end
     on_intel do
-      url "https://github.com/igorlino/justz/releases/download/v0.2.0/justz-0.2.0-linux-amd64.tar.gz"
-      sha256 "fa7a40a7496ee91fe78e4201d7bb8e0282029aa7dbbfb56edacca077280c5aa8"
+      url "https://github.com/igorlino/justz/releases/download/v0.3.0/justz-0.3.0-linux-amd64.tar.gz"
+      sha256 "2dd3efff9d57f0a5c919d11a3b946caa4c67eda694b7acd0e1a3840a944ccd3f"
     end
   end
 
@@ -30,6 +30,8 @@ class Justz < Formula
 
   def install
     bin.install "justz"
+    # justz acts as jz when started under that name. jzh follows with justz help.
+    bin.install_symlink "justz" => "jz"
   end
 
   test do
