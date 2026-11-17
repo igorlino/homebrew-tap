@@ -1,28 +1,28 @@
 class Justz < Formula
   desc "Help, checks and shims for just"
   homepage "https://github.com/igorlino/justz"
-  version "0.8.1"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/igorlino/justz/releases/download/v0.8.1/justz-0.8.1-darwin-arm64.tar.gz"
-      sha256 "6a27433da5aa02132710321a04a78334bd2cd9449c56306bd168a69fa5ff4de6"
+      url "https://github.com/igorlino/justz/releases/download/v0.9.0/justz-0.9.0-darwin-arm64.tar.gz"
+      sha256 "661d652bca1942a862e4d2e8a1c07bf3a6091f4bd7e3cb1c504a7575b80a7e0c"
     end
     on_intel do
-      url "https://github.com/igorlino/justz/releases/download/v0.8.1/justz-0.8.1-darwin-amd64.tar.gz"
-      sha256 "92a0082e98cc3882c4889aef8d6b81f2a2262ca22243f44946792748ee358daf"
+      url "https://github.com/igorlino/justz/releases/download/v0.9.0/justz-0.9.0-darwin-amd64.tar.gz"
+      sha256 "d12f7130fa848234f4e7cf8c5fc6394b8daf900e5e1420a5837c8d296d74b87c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/igorlino/justz/releases/download/v0.8.1/justz-0.8.1-linux-arm64.tar.gz"
-      sha256 "790693a3b793184071c1ca43ba54fe56dbf4464b990fc33439bf7449a85e6d17"
+      url "https://github.com/igorlino/justz/releases/download/v0.9.0/justz-0.9.0-linux-arm64.tar.gz"
+      sha256 "42ebe017e611d2479ba8565b18d3a36d0f901c215f42f875d417046b5f9ce0f6"
     end
     on_intel do
-      url "https://github.com/igorlino/justz/releases/download/v0.8.1/justz-0.8.1-linux-amd64.tar.gz"
-      sha256 "b43de86c385f575a7631e4d3fa87a1ff0766abac962e9fd8a8b57be08688d207"
+      url "https://github.com/igorlino/justz/releases/download/v0.9.0/justz-0.9.0-linux-amd64.tar.gz"
+      sha256 "11da2032ee961a5fcfe603c479e2dc40443d74b4f06b0cd27f5ea298e3fcef0d"
     end
   end
 
